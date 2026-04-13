@@ -1,0 +1,122 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.nav-logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.nav-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("../assets/images/ponte.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 22px;
+}
+
+/* BOTÃO */
+.btn-alerta {
+  background: linear-gradient(45deg, #ff0000, #990000);
+  border: none;
+  padding: 15px 35px;
+  font-size: 20px;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-alerta:hover {
+  transform: scale(1.08);
+}
+
+/* CONFIRMAÇÃO */
+.confirm-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.confirm-box {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* BOTÕES */
+.btn-confirmar {
+  background: #28a745;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-cancelar {
+  background: #6c757d;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+}

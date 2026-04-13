@@ -1,0 +1,7 @@
+CREATE TABLE alerta (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  usuario VARCHAR(100),
+  localizacao VARCHAR(255),
+  data_hora DATETIME DEFAULT CURRENT_TIMESTAMP,
+  status VARCHAR(50)
+);
